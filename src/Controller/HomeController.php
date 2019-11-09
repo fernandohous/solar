@@ -16,7 +16,17 @@ class HomeController extends AbstractController
     public function homepage()
     {
         return $this->render('/home/home.html.twig',[
-            'title' => 'Inicio'
+            'title' => 'Home'
+        ]);
+    }
+
+    /**
+     * @Route("/login", name="app_login")
+     */
+    public function login()
+    {
+        return $this->render('@Security/Collector/security.html.twig',[
+            'title' => 'Login'
         ]);
     }
 
