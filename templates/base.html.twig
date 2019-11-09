@@ -9,14 +9,52 @@
         <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
         <!-- Mine Stylesheet -->
+
+        <link rel="stylesheet" href="/css/mobile.css">
         <link rel="stylesheet" href="/css/style.css">
+
+
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
     {% endblock %}
 
 </head>
 <body>
-{% block body %}{% endblock %}
+{% block body %}
+{% endblock %}
+
+<div class="menu uk-hidden@s">
+    <nav class="menu__nav">
+        <ul class="r-list menu__list">
+            <li class="menu__group">
+                <a href="{{ path('app_homepage') }}" class="r-link menu__link">Home</a>
+            </li>
+            <li class="menu__group">
+                <a href="#0" class="r-link menu__link">Play</a>
+            </li>
+            <li class="menu__group">
+                <a href="#0" class="r-link menu__link">Guides</a>
+            </li>
+            <li class="menu__group">
+                <a href="#0" class="r-link menu__link">Groups</a>
+            </li>
+            <li class="menu__group">
+                <a href="#0" class="r-link menu__link">Games</a>
+            </li>
+            <li class="menu__group">
+                <a href="#0" class="r-link menu__link">About</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="menu__toggle">
+        <button class="r-button menu__hamburger">
+      <span class="m-hamburger">
+        <span class="m-hamburger__label">Open menu</span>
+      </span>
+        </button>
+    </div>
+</div>
 
 {% block javascripts %}
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -28,6 +66,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
+    <script src="js/mobile.js"></script>
+
 {% endblock %}
+
+
+
 </body>
 </html>

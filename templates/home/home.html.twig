@@ -1,29 +1,42 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <div class="uk-cover-container block-homepage-background">
-        <div class="uk-logo">
-            <span class="logo-homepage">SOLAR</span>
-            <a class="button-login uk-button uk-button-primary uk-align-right ">Login</a>
-
+    <div class="uk-logo">
+        <span class="logo-homepage">SOLAR</span>
+        <div class="uk-navbar-center uk-display-inline-block">
+            <ul class="menu-desktop uk-visible@s">
+                <li><a href="{{ path('app_homepage') }}">Home</a></li>
+                <li><a href="#">Play</a></li>
+                <li><a href="#">Guides</a></li>
+                <li><a href="#">Groups</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
         </div>
-        <h2 class="uk-text-center find-homepage-color">Find cool friends to <span href="/play"
-                                                                                  class="play-homepage-color">play</span>
-            with!</h2>
-        <div class="uk-margin uk-text-center">
-            <form class="uk-search search-homepage uk-search-default">
-                <span uk-search-icon></span>
-                <input class="uk-search-input" type="search" placeholder="Game search...">
-            </form>
+
+
+        <a class="button-login uk-button uk-button-primary uk-align-right uk-visible@s ">Login</a>
+    </div>
+
+    <div class="uk-cover-container block-homepage-background">
+        <div class="find-homepage">
+            <h2 class="uk-text-center find-homepage-color">Find cool friends to <span href="/play"
+                                                                                      class="play-homepage-color">play</span>
+                with!</h2>
+            <div class="uk-margin uk-text-center">
+                <form class="uk-search search-homepage uk-search-default">
+                    <span uk-search-icon></span>
+                    <input class="uk-search-input" type="search" placeholder="Game search...">
+                </form>
+            </div>
         </div>
 
     </div>
 
-
-    <div class="content-homepage">
-        <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match uk-grid">
-            <div>
-                <div class="uk-card uk-card-body">
+    <div class="uk-cover-container">
+        <div class="content-homepage">
+            <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match uk-grid">
+                <div>
                     <h3 class="uk-card-title">Create your free account</h3>
                     <span uk-icon="heart"></span>
                     <p>Create your free account to search for new game groups!</p>
@@ -33,13 +46,28 @@
         </div>
     </div>
 
-    <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match uk-grid">
-        <div>
-            <div class="uk-card uk-card-body uk-position-absolute">
-                <h3 class="uk-card-title">Create your free account</h3>
-                <span uk-icon="heart"></span>
-                <p>Create your free account to search for new game groups!</p>
-                <img src="assets/img/pluto.png"/>
+    <div class="uk-cover-container">
+        <div class="content-homepage-2">
+            <div class="uk-child-width-1-3@m uk-grid-match">
+                <div class="uk-align-right uk-text-right">
+                    <h3 class="uk-card-title">Play alone no more!</h3>
+                    <span uk-icon="heart"></span>
+                    <p>Dont be shy, come with us and look for friends and cool things here!</p>
+                    <img src="assets/img/pluto2.png"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="uk-cover-container">
+        <div class="content-homepage-3">
+            <div class="uk-child-width-1-3@m">
+                <div>
+                    <h3 class="uk-card-title">Create your free account</h3>
+                    <span uk-icon="heart"></span>
+                    <p>Create your free account to search for new game groups!</p>
+                    <img src="assets/img/pluto.png"/>
+                </div>
             </div>
         </div>
     </div>

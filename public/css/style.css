@@ -2,14 +2,32 @@ body{
     /* Base font */
     font-family: 'Ubuntu', sans-serif;
 }
+
+.uk-logo{
+    overflow: hidden;
+    background-color: #6A76CC;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+
+
+}
+
 .block-homepage-background{
     background-color: white;
-    height: 20rem;
-    padding: 2px;
+    height: 15rem;
+    padding-top: 10rem;
 }
 .logo-homepage{
-    color: #FFA556;
+    color: white;
     font-size: 2rem;
+}
+
+@media (max-width: 767px){
+    .uk-logo{
+        text-align: center;
+    }
 }
 
 .play-homepage-color{
@@ -21,11 +39,40 @@ body{
     font-family: 'Staatliches', 'Ubuntu', "Arial", serif;
 }
 
+/* Menu Desktop */
+
+.menu-desktop{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.menu-desktop li{
+    float: left;
+}
+
+.menu-desktop li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu-desktop li a:hover{
+    background-color: #7584eb;
+}
+
+
 .button-login{
     color: white;
     font-size: 1rem;
     font-weight: bold;
     background-color: #6A76CC;
+    margin: 0 0 0 0;
+    height: 3rem;
 }
 .button-login:hover{
     background-color: #7584eb;
@@ -41,6 +88,26 @@ body{
     padding: 2rem;
 }
 
-.uk-card-title{
+.content-homepage p, h3{
     color: white;
 }
+
+.content-homepage-2{
+    padding: 2rem;
+}
+
+.content-homepage-2 h3, p{
+    color: black;
+}
+
+.content-homepage-3{
+    background-color: #FFA556;
+    padding: 2rem;
+}
+
+.content-homepage-3 p, h3{
+    color: white;
+
+}
+
+
